@@ -1,0 +1,64 @@
+{
+  "roomlist": [
+    {
+      "roomID": "fhei11820gbfh",
+      "name": "I-589 - AMARKHIL, Obaidullah [Affirmative Filling with ZHN]",
+      "dateUpdated": "10/12/2021",
+      "time": "19:32",
+      "unread": true,
+      "connected": true,
+      "overview": {
+        "name": "Obaidullah Amarkhil",
+        "chat": "Morning. I'll try to do them. Thanks"
+      }
+    },
+    {
+      "roomID": "1fsahi01324791",
+      "name": "109220-Naturalization",
+      "dateUpdated": "10/12/2021",
+      "time": "19:10",
+      "unread": true,
+      "connected": true,
+      "overview": {
+        "name": "Cameron Phillips",
+        "chat": "Please check this out!"
+      }
+    },
+    {
+      "roomID": "sadjk124610b9",
+      "name": "Jeannette Moraima Guaman Chamba (Hutto I-589)[Hutto Follow Up - Brief Service]",
+      "dateUpdated": "02/06/2021",
+      "time": "10:45",
+      "unread": false,
+      "connected": true,
+      "overview": {
+        "name": "Ellen",
+        "chat": "Hey, please read."
+      }
+    },
+    {
+      "roomID": "dfhl23410bb1b290",
+      "name": "8405-Diana SALAZAR MUNGUIA",
+      "dateUpdated": "01/06/2021",
+      "time": "12:19",
+      "unread": false,
+      "connected": true,
+      "overview": {
+        "name": "Cameron Phillips",
+        "chat": "I understand your initial concerns and thats very valid, Elizabeth. But you ..."
+      }
+    },
+    {
+      "roomID": "dhgiogweg719041",
+      "name": "FastVisa Support",
+      "dateUpdated": "01/06/2021",
+      "time": "12:19",
+      "unread": false,
+      "connected": false,
+      "overview": {
+        "name": "",
+        "chat": "Hey there! Welcome to your inbox."
+      }
+    }
+  ]
+}

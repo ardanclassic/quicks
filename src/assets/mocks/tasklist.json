@@ -1,0 +1,76 @@
+{
+  "tasklist": [
+    {
+      "id": "fhei11820gbfh",
+      "name": "Close off Case #012920- RODRIGUES, Amiguel",
+      "description": "Closing off this case since this application has been cancelled. No one really understand how this case could possibly be cancelled. The options and the documents within this document were totally a guaranteed for a success!",
+      "dateCreated": "28/12/2023",
+      "deadline": "1/1/2024",
+      "type": "personal",
+      "completed": false
+    },
+    {
+      "id": "sahjwf79201ggg",
+      "name": "Set up documentation report for several Cases : Case 145443, Case 192829 and Case 182203",
+      "description": "All Cases must include all payment transactions, all documents and forms filled. All conversations in comments and messages in channels and emails should be provided as well in.",
+      "dateCreated": "22/12/2023",
+      "deadline": "29/12/2023",
+      "type": "personal",
+      "completed": false
+    },
+    {
+      "id": "hhgw28916gsga88",
+      "name": "Set up appointment with Dr Blake",
+      "description": "",
+      "dateCreated": "27/11/2023",
+      "deadline": "26/12/2023",
+      "type": "personal",
+      "completed": false
+    },
+    {
+      "id": "gwhi62681ggg259",
+      "name": "Contact Mr Caleb - video conference?",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nesciunt, repellat doloremque velit soluta dicta voluptatem iste harum expedita obcaecati excepturi, dolore ab ullam enim ut non hic, delectus aliquam omnis voluptatibus. Hic earum pariatur temporibus quam magni, maiores ex voluptatibus officia ab, quibusdam voluptas voluptate numquam obcaecati totam eligendi velit facere asperiores illum porro mollitia commodi nihil odit id omnis. In quis praesentium asperiores adipisci similique perferendis corrupti rerum.",
+      "dateCreated": "3/8/2023",
+      "deadline": "2/10/2023",
+      "type": "personal",
+      "completed": true
+    },
+    {
+      "id": "hisj3216891kwqkl",
+      "name": "Assign 3 homework to Client A",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nesciunt, repellat doloremque velit soluta dicta voluptatem iste harum expedita obcaecati excepturi, dolore ab ullam enim ut non hic, delectus aliquam omnis voluptatibus. Hic earum pariatur temporibus quam magni, maiores ex voluptatibus officia ab",
+      "dateCreated": "2/06/2023",
+      "deadline": "2/7/2023",
+      "type": "personal",
+      "completed": true
+    },
+    {
+      "id": "wyi125970ahhaks",
+      "name": "Cross-reference with Jeanne for Case #192813",
+      "description": "",
+      "dateCreated": "1/12/2023",
+      "deadline": "26/12/2023",
+      "type": "urgent",
+      "completed": false
+    },
+    {
+      "id": "tuw7281gjsak82",
+      "name": "Contact Andrew for Online Meeting and Conference",
+      "description": "",
+      "dateCreated": "3/6/2023",
+      "deadline": "8/6/2023",
+      "type": "urgent",
+      "completed": true
+    },
+    {
+      "id": "gge55236hytsa",
+      "name": "Check and Revise Homework from Andre Gonzales",
+      "description": "Homeworks needed to be checked are as follows : Client Profile Questionnaire, Passport Requirements and Images, Personal Documents.",
+      "dateCreated": "11/3/2023",
+      "deadline": "17/5/2023",
+      "type": "urgent",
+      "completed": true
+    }
+  ]
+}
