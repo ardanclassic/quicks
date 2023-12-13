@@ -90,7 +90,7 @@ function TaskList({ taskSelected, newTask, setNewTask }: any) {
       } else {
         return (
           <div className="blank relative top-36 my-4 text-center font-semibold text-primary-300">
-            there's no task here ...
+            no task here ...
           </div>
         );
       }

@@ -57,9 +57,7 @@ function ShowRoom({ roomInfo }: any) {
           );
         })
       ) : (
-        <div className="blank relative top-36 my-4 text-center font-semibold text-primary-300">
-          there's no chat here ...
-        </div>
+        <div className="blank relative top-36 my-4 text-center font-semibold text-primary-300">no chat here ...</div>
       )}
 
       <div ref={refchat} className="bottom"></div>
