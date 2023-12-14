@@ -37,7 +37,7 @@ function TaskItem({ task, setdeleted, setNewTask }: any) {
 
   const CheckBox = () => {
     return (
-      <div className="checkbox">
+      <div className="checkbox mt-1">
         {taskdata?.completed ? (
           <Image
             src={checked}
@@ -151,7 +151,7 @@ function TaskItem({ task, setdeleted, setNewTask }: any) {
           <div className="head flex gap-4">
             <div
               onClick={() => setcontentopen(!contentopen)}
-              className={`name ${taskdata?.completed && "line-through"} flex-1 font-semibold cursor-pointer`}
+              className={`name ${taskdata?.completed && "line-through"} flex-1 text-base font-bold cursor-pointer`}
             >
               {taskdata?.name}
             </div>

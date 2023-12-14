@@ -79,7 +79,7 @@ function TaskList({ taskSelected, newTask, setNewTask }: any) {
           className="loading-box text-center my-[30%]"
         >
           <Loading loading={loading} setLoading={setLoading} />
-          <div className="font-semibold text-primary-200 text-lg">Loading Task List ...</div>
+          <div className="font-bold text-primary-200 text-lg">Loading Task List ...</div>
         </motion.div>
       );
     } else {
@@ -89,7 +89,7 @@ function TaskList({ taskSelected, newTask, setNewTask }: any) {
         });
       } else {
         return (
-          <div className="blank relative top-36 my-4 text-center font-semibold text-primary-300">
+          <div className="blank relative top-36 my-4 text-center font-bold text-primary-300">
             no task here ...
           </div>
         );

@@ -33,7 +33,7 @@ function RoomList({ setcontentMode }: any) {
         className="loading-box text-center my-[30%]"
       >
         <Loading loading={loading} setLoading={setLoading} />
-        <div className="font-semibold text-primary-200 text-lg">Loading Chats ...</div>
+        <div className="font-bold text-primary-200 text-lg">Loading Chats ...</div>
       </motion.div>
     );
   };
@@ -91,7 +91,7 @@ function RoomList({ setcontentMode }: any) {
                           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[18px] h-[18px]"
                         />
                       ) : (
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold text-white">
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-white">
                           {room?.name.substring(0, 1)}
                         </div>
                       )}
@@ -100,13 +100,13 @@ function RoomList({ setcontentMode }: any) {
                 </div>
                 <div className="desc">
                   <div className="title-box flex gap-3">
-                    <div className="room-name font-semibold text-primary-100">{room?.name}</div>
+                    <div className="room-name font-bold text-primary-100">{room?.name}</div>
                     <div className="datetime text-sm min-w-[130px]">
                       {room?.dateUpdated} {room?.time}
                     </div>
                   </div>
                   <div className="overview text-sm">
-                    {room?.overview?.name && <div className="name font-semibold">{room?.overview?.name} :</div>}
+                    {room?.overview?.name && <div className="name font-bold">{room?.overview?.name} :</div>}
                     <div className="chat">{room?.overview?.chat}</div>
                   </div>
                 </div>

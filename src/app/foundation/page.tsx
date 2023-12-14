@@ -11,6 +11,7 @@ import task_active from "@/assets/icons/task-white.png";
 import inbox_active from "@/assets/icons/inbox-white.png";
 import TaskComponent from "@/component/task";
 import InboxComponent from "@/component/inbox";
+import Fade from "@/component/fade";
 
 function Foundation() {
   const controls = useAnimationControls();
@@ -18,19 +19,35 @@ function Foundation() {
   const [window, setwindow] = useState("");
 
   useEffect(() => {
-    if (quickstat) {
-      controls.start({ left: "0" });
+    if (window) {
+      if (window === "inbox") {
+        controls.start({ left: "84px" });
+      } else {
+        controls.start((i) => ({ left: i === 2 ? "168px" : "0px" }));
+      }
     } else {
-      controls.start((i) => ({ left: i > 1 ? "152px" : "76px" }));
+      if (quickstat) {
+        controls.start({ left: "0" });
+      } else {
+        controls.start((i) => ({ left: i > 1 ? "168px" : "84px" }));
+      }
     }
-  }, [quickstat]);
+  }, [quickstat, window]);
 
   const DisplayWindow = () => {
     if (window) {
       if (window === "task") {
-        return <TaskComponent />;
+        return (
+          <Fade isActive={window === "task"}>
+            <TaskComponent />
+          </Fade>
+        );
       } else {
-        return <InboxComponent />;
+        return (
+          <Fade isActive={window === "inbox"}>
+            <InboxComponent />
+          </Fade>
+        );
       }
     } else {
       return null;
@@ -44,9 +61,12 @@ function Foundation() {
         <input type="text" className="bg-primary-200 w-full py-3 px-8 pl-14 outline-none" />
       </div>
       <DisplayWindow />
-      <div className="btn-group absolute bottom-4 right-4 flex gap-2 flex-row-reverse">
+
+      <div className="btn-group absolute bottom-4 right-4 flex gap-4 flex-row-reverse">
         <button
-          className="bg-primary-100 rounded-full w-[68px] h-[68px] p-3 z-10 cursor-pointer overflow-hidden relative"
+          className={`relative bg-primary-100 rounded-full w-[68px] h-[68px] p-3 transition ease-in duration-300 ${
+            !window ? "z-[3]" : "z-[1] bg-primary-200 -translate-x-2"
+          } cursor-pointer overflow-hidden`}
           onClick={() => {
             setwindow("");
             setquickstat(!quickstat);
@@ -61,12 +81,18 @@ function Foundation() {
 
         <motion.button
           custom={1}
-          initial={{ left: "76px" }}
+          initial={{ left: "84px" }}
           animate={controls}
           className={`${
             window === "inbox" ? "bg-indicator-200" : "bg-white"
-          }  rounded-full w-[68px] h-[68px] p-3 cursor-pointer overflow-hidden relative`}
-          onClick={() => setwindow("inbox")}
+          }  rounded-full w-[68px] h-[68px] p-3 cursor-pointer overflow-hidden z-[2] relative`}
+          onClick={() => {
+            if (window && window === "inbox") {
+              setwindow("");
+            } else {
+              setwindow("inbox");
+            }
+          }}
         >
           <Image
             src={window === "inbox" ? inbox_active : inbox_def}
@@ -77,12 +103,18 @@ function Foundation() {
 
         <motion.button
           custom={2}
-          initial={{ left: "152px" }}
+          initial={{ left: "168px" }}
           animate={controls}
           className={`${
             window === "task" ? "bg-indicator-100" : "bg-white"
-          }  rounded-full w-[68px] h-[68px] p-3 cursor-pointer overflow-hidden relative`}
-          onClick={() => setwindow("task")}
+          }  rounded-full w-[68px] h-[68px] p-3 cursor-pointer overflow-hidden z-[2] relative`}
+          onClick={() => {
+            if (window && window === "task") {
+              setwindow("");
+            } else {
+              setwindow("task");
+            }
+          }}
         >
           <Image
             src={window === "task" ? task_active : task_def}

@@ -28,7 +28,7 @@ function ShowRoom({ roomInfo }: any) {
           return (
             <div key={chat?.chatID}>
               {chat?.unread && (
-                <div className="unread flex items-center text-indicator-300 font-semibold text-center">
+                <div className="unread flex items-center text-indicator-300 font-bold text-center">
                   <div className="line flex-1 h-[1px] bg-indicator-300"></div>
                   <div className="text mx-2">New Message</div>
                   <div className="line flex-1 h-[1px] bg-indicator-300"></div>
@@ -36,7 +36,7 @@ function ShowRoom({ roomInfo }: any) {
               )}
               <div className={`chat-item text-sm my-2`}>
                 <div
-                  className={`sender font-semibold ${chat.senderID === myUserID && "text-right"}`}
+                  className={`sender font-bold ${chat.senderID === myUserID && "text-right"}`}
                   style={{ color: chat?.theme?.color }}
                 >
                   {chat.senderID === myUserID ? "You" : chat?.senderName}
@@ -57,7 +57,7 @@ function ShowRoom({ roomInfo }: any) {
           );
         })
       ) : (
-        <div className="blank relative top-36 my-4 text-center font-semibold text-primary-300">no chat here ...</div>
+        <div className="blank relative top-36 my-4 text-center font-bold text-primary-300">no chat here ...</div>
       )}
 
       <div ref={refchat} className="bottom"></div>

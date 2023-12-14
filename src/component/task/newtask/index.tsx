@@ -84,7 +84,7 @@ function NewTask({ setNewTask }: any) {
       <CheckBox />
       <div className="content flex-1">
         <div className="head flex gap-4">
-          <div className={`name flex-1 font-semibold`}>
+          <div className={`name flex-1 font-bold`}>
             <input
               type="text"
               name="tasktitle"

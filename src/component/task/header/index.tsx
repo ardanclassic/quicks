@@ -12,7 +12,7 @@ function HeaderSection({ taskSelected, setTaskSelected, setNewTask }: any) {
       <div
         className={`task-popover ${
           taskpopover ? "block" : "hidden"
-        } absolute left-4 top-12 w-[288px] bg-white z-10 text-sm border-[1px] border-[#828282] rounded-md font-semibold`}
+        } absolute left-4 top-12 w-[288px] bg-white z-10 text-sm border-[1px] border-[#828282] rounded-md font-bold`}
       >
         <div
           onClick={() => {
@@ -43,7 +43,7 @@ function HeaderSection({ taskSelected, setTaskSelected, setNewTask }: any) {
           onClick={() => settaskpopover(!taskpopover)}
           className="toggler flex gap-2 justify-between items-center min-w-[118px] py-2 pl-3 pr-2 ml-24 rounded-md border-[1px] border-[#828282] text-primary-200 cursor-pointer"
         >
-          <div className="text-primary-200 font-semibold text-sm">
+          <div className="text-primary-200 font-bold text-sm">
             {taskSelected ? (taskSelected === "personal" ? "Personal Errands" : "Urgent To-Do") : "My Task"}
           </div>
           <div className="icon">
@@ -55,7 +55,7 @@ function HeaderSection({ taskSelected, setTaskSelected, setNewTask }: any) {
       <div className="btn-area">
         <button
           onClick={() => setNewTask(true)}
-          className="py-2 px-3 bg-primary-100 w-[100px] text-white text-sm rounded-lg font-semibold"
+          className="py-2 px-3 bg-primary-100 w-[100px] text-white text-sm rounded-lg font-bold"
         >
           New Task
         </button>

@@ -48,7 +48,7 @@ function RoomChat({ setcontentMode }: any) {
         className="loading-box text-center my-[30%]"
       >
         <Loading loading={loading} setLoading={setLoading} />
-        <div className="font-semibold text-primary-200 text-lg">Loading Chats ...</div>
+        <div className="font-bold text-primary-200 text-lg">Loading Chats ...</div>
       </motion.div>
     );
   };
@@ -68,7 +68,7 @@ function RoomChat({ setcontentMode }: any) {
   const UnreadMessagePopup = () => {
     if (roomInfo.unread && unreadChat) {
       return (
-        <div className="newchat absolute w-[141px] left-1/2 -translate-x-1/2 bottom-[56px] rounded-lg text-center p-2 bg-stickers-100 text-primary-100 font-semibold">
+        <div className="newchat absolute w-[141px] left-1/2 -translate-x-1/2 bottom-[56px] rounded-lg text-center p-2 bg-stickers-100 text-primary-100 font-bold">
           New Message
         </div>
       );
@@ -88,7 +88,7 @@ function RoomChat({ setcontentMode }: any) {
               css={{ borderWidth: "4px", margin: "0 auto" }}
             />
           </div>
-          <div className="text-primary-200 text-[15px] font-semibold">
+          <div className="text-primary-200 text-[15px] font-bold">
             Please wait while we connect you with one of our team ...
           </div>
         </div>
@@ -103,7 +103,7 @@ function RoomChat({ setcontentMode }: any) {
           <Image src={back} alt="back" onClick={() => setcontentMode("list")} className="w-6 cursor-pointer" />
         </div>
         <div className="title flex-1">
-          <div className="name text-primary-100 font-semibold text-ellipsis overflow-hidden whitespace-nowrap max-w-[600px]">
+          <div className="name text-primary-100 font-bold text-ellipsis overflow-hidden whitespace-nowrap max-w-[600px]">
             {!loading && roomInfo?.name}
           </div>
           <div className="participant text-sm text-[#333333]">
@@ -136,7 +136,7 @@ function RoomChat({ setcontentMode }: any) {
                 placeholder="Type a new message"
                 className="flex-1 border border-primary-300 py-2 px-6 rounded-lg"
               />
-              <button type="submit" className="py-2 px-3 bg-primary-100 text-white font-semibold rounded-lg">
+              <button type="submit" className="py-2 px-3 bg-primary-100 text-white font-bold rounded-lg">
                 Send
               </button>
             </div>
